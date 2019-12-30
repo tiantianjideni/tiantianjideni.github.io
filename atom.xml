@@ -6,7 +6,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-29T11:22:22.927Z</updated>
+  <updated>2019-12-30T14:52:38.773Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,17 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>centos7-Compile-boost-blog</title>
+    <title>centos7如何编译boost1.72库</title>
     <link href="http://yoursite.com/2019/12/29/centos7-Compile-boost-blog/"/>
     <id>http://yoursite.com/2019/12/29/centos7-Compile-boost-blog/</id>
     <published>2019-12-29T11:22:22.000Z</published>
-    <updated>2019-12-29T11:22:22.927Z</updated>
+    <updated>2019-12-30T14:52:38.773Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-安装编译器"><a href="#1-安装编译器" class="headerlink" title="1.安装编译器"></a>1.安装编译器</h1><p>yum -y install gcc gcc-c++ kernel-devel</p><a id="more"></a><h1 id="2-下载源码"><a href="#2-下载源码" class="headerlink" title="2.下载源码"></a>2.下载源码</h1><p>地址：<a href="http://www.boost.org/" target="_blank" rel="noopener">http://www.boost.org/</a><br>源码包：boost_1_72_0.tar.gz</p><h1 id="3-编译"><a href="#3-编译" class="headerlink" title="3.编译"></a>3.编译</h1><p>tar -zxvf boost_1_72_0.tar.gz<br>cd boost_1_72_0<br>./bootstrap.sh<br>sudo ./b2 install</p><h1 id="4-手动创建boost库安装路径"><a href="#4-手动创建boost库安装路径" class="headerlink" title="4.手动创建boost库安装路径"></a>4.手动创建boost库安装路径</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir &#x2F;usr&#x2F;include&#x2F;boost</span><br><span class="line">$ cp -rf &#x2F;usr&#x2F;local&#x2F;include&#x2F;boost&#x2F;* &#x2F;usr&#x2F;include&#x2F;boost</span><br><span class="line">$ cp -rf &#x2F;usr&#x2F;local&#x2F;lib&#x2F;* &#x2F;usr&#x2F;lib</span><br></pre></td></tr></table></figure><h1 id="5-执行命令"><a href="#5-执行命令" class="headerlink" title="5.执行命令"></a>5.执行命令</h1><p>ldconfig /usr/local/lib</p>]]></content>
     
     <summary type="html">
+    
+      &lt;h1 id=&quot;1-安装编译器&quot;&gt;&lt;a href=&quot;#1-安装编译器&quot; class=&quot;headerlink&quot; title=&quot;1.安装编译器&quot;&gt;&lt;/a&gt;1.安装编译器&lt;/h1&gt;&lt;p&gt;yum -y install gcc gcc-c++ kernel-devel&lt;/p&gt;
     
     </summary>
     
     
+    
+      <category term="boost1.72 centos" scheme="http://yoursite.com/tags/boost1-72-centos/"/>
     
   </entry>
   
