@@ -6,7 +6,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-30T14:52:38.773Z</updated>
+  <updated>2019-12-30T15:34:14.904Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>centos7环境编译CxImage</title>
+    <link href="http://yoursite.com/2019/12/30/centos7-Compile-cximage/"/>
+    <id>http://yoursite.com/2019/12/30/centos7-Compile-cximage/</id>
+    <published>2019-12-30T14:55:48.000Z</published>
+    <updated>2019-12-30T15:34:14.904Z</updated>
+    
+    <content type="html"><![CDATA[<p>cximage 主页<br><a href="http://www.xdp.it/cximage/" target="_blank" rel="noopener">http://www.xdp.it/cximage/</a><br> 目前稳定支持windows环境。centos环境待研究。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;cximage 主页&lt;br&gt;&lt;a href=&quot;http://www.xdp.it/cximage/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.xdp.it/cximage/&lt;/a&gt;&lt;br&gt; 目前稳定支持windows环境。cent
+      
+    
+    </summary>
+    
+    
+    
+      <category term="centos7 cximage" scheme="http://yoursite.com/tags/centos7-cximage/"/>
+    
+  </entry>
   
   <entry>
     <title>centos7如何编译boost1.72库</title>
