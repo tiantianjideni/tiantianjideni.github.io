@@ -6,7 +6,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-30T15:34:14.904Z</updated>
+  <updated>2019-12-30T16:06:21.164Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>centos7编译freeimage库</title>
+    <link href="http://yoursite.com/2019/12/30/centos7-Compile-freeimage/"/>
+    <id>http://yoursite.com/2019/12/30/centos7-Compile-freeimage/</id>
+    <published>2019-12-30T15:34:36.000Z</published>
+    <updated>2019-12-30T16:06:21.164Z</updated>
+    
+    <content type="html"><![CDATA[<p>官网<br><a href="http://freeimage.sourceforge.net/" target="_blank" rel="noopener">http://freeimage.sourceforge.net/</a><br>FreeImage3180.zip  </p><h1 id="1-编译"><a href="#1-编译" class="headerlink" title="1.编译"></a>1.编译</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">unzip FreeImage3170.zip -d freeImage  </span><br><span class="line">cd FreeImage  </span><br><span class="line">sudo make</span><br></pre></td></tr></table></figure><p>编译成功<br><img src="https://i.loli.net/2019/12/31/s3h6Bzemiw7VHNW.png" alt=""></p><p>安装到指定目录（默认在usr/lib目录下面）：<br>sudo make install<br><img src="https://i.loli.net/2019/12/31/QG4jk6Bn8HKZOEv.png" alt=""></p><h1 id="2-检查"><a href="#2-检查" class="headerlink" title="2.检查"></a>2.检查</h1><p>freeimage include路径：<br><img src="https://i.loli.net/2019/12/31/w1TB7PRgCcxGVFJ.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;官网&lt;br&gt;&lt;a href=&quot;http://freeimage.sourceforge.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://freeimage.sourceforge.net/&lt;/a&gt;&lt;br&gt;FreeImage3180.z
+      
+    
+    </summary>
+    
+    
+    
+      <category term="cximage freeimage" scheme="http://yoursite.com/tags/cximage-freeimage/"/>
+    
+  </entry>
   
   <entry>
     <title>centos7环境编译CxImage</title>
