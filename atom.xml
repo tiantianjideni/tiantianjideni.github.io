@@ -6,7 +6,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-30T16:06:21.164Z</updated>
+  <updated>2019-12-31T02:06:28.794Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>centos7编译libwebp</title>
+    <link href="http://yoursite.com/2019/12/31/centos7-compile-libwebp/"/>
+    <id>http://yoursite.com/2019/12/31/centos7-compile-libwebp/</id>
+    <published>2019-12-31T11:20:56.000Z</published>
+    <updated>2019-12-31T02:06:28.794Z</updated>
+    
+    <content type="html"><![CDATA[<p>下载源码包:<br> <a href="https://github.com/webmproject/libwebp/releases" target="_blank" rel="noopener">https://github.com/webmproject/libwebp/releases</a><br> libwebp-v1.0.3.zip</p><h1 id="1-jepg、png、tiff插件安装"><a href="#1-jepg、png、tiff插件安装" class="headerlink" title="1.jepg、png、tiff插件安装"></a>1.jepg、png、tiff插件安装</h1> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install libjpeg libpng freetype libjpeg-devel libpng-devel freetype-devel -y</span><br><span class="line">yum install -y libgeotiff-devel</span><br></pre></td></tr></table></figure><h1 id="2-简单编译"><a href="#2-简单编译" class="headerlink" title="2.简单编译"></a>2.简单编译</h1><p> 仅仅编译examples/cwebp和examples/dwebp，与static library src/libwebp.a。<br> 使用makefile.unix进行编译<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd libwebp-1.0.3&#x2F;  </span><br><span class="line">make -f makefile.unix</span><br></pre></td></tr></table></figure><br> 成功：<br> <img src="https://i.loli.net/2019/12/31/8Ttez3RZUI5bQMC.png" alt=""></p><h1 id="3-完整编译"><a href="#3-完整编译" class="headerlink" title="3.完整编译"></a>3.完整编译</h1><pre><code> yum install gcc make autoconf automake libtool cd libwebp-1.0.3/   #生成configure脚本 ./autogen.sh ./configuremakemake install</code></pre><p> 会生成如下目录和文件：<br>/usr/local/include/webp/decode.h<br>/usr/local/include/webp/encode.h<br>/usr/local/include/webp/types.h<br>/usr/local/lib/libwebp.*<br>/usr/local/bin/cwebp<br>/usr/local/bin/dwebp  </p><p>如需你需要生成libwebpdecoder， ./configure 需要带上选项：<br>–enable-libwebpdecoder<br>更多选项信息请使用以下命令查看：<br>./configure –help<br><img src="https://i.loli.net/2019/12/31/rdcH5t7imOq6anA.png" alt=""><br><img src="https://i.loli.net/2019/12/31/NyG3icFATpHC4ZW.png" alt=""></p><h1 id="4-测试"><a href="#4-测试" class="headerlink" title="4.测试"></a>4.测试</h1><p>cwebp -q 70 test.jpg -o out.webp<br><img src="https://i.loli.net/2019/12/31/jPI41a7CNxos2rn.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;下载源码包:&lt;br&gt; &lt;a href=&quot;https://github.com/webmproject/libwebp/releases&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/webmproject/libweb
+      
+    
+    </summary>
+    
+    
+    
+      <category term="centos7 libwebp" scheme="http://yoursite.com/tags/centos7-libwebp/"/>
+    
+  </entry>
   
   <entry>
     <title>centos7编译freeimage库</title>
