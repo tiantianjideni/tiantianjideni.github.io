@@ -6,7 +6,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-31T02:06:28.794Z</updated>
+  <updated>2025-07-06T14:09:57.280Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&#39;windows_NSIS_package_setup_error&#39;</title>
+    <link href="http://yoursite.com/2025/07/06/windows-NSIS-package-setup-error/"/>
+    <id>http://yoursite.com/2025/07/06/windows-NSIS-package-setup-error/</id>
+    <published>2025-07-06T14:09:57.000Z</published>
+    <updated>2025-07-06T14:09:57.280Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>centos7编译libwebp</title>
